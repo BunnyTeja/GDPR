@@ -22,10 +22,10 @@ alphanumeric = "qwertyuiopasdfghjklzxcvbnm"
 alphanumeric += alphanumeric.upper() + " \n"+"1234567890.,?!:;(){}[]"
 
 
-colorDictFile = "..\\Data\\ColorDictionary.xlsx"
-termListFile = "..\\Data\\TermsList_Preliminary_v.1.xlsx"
-defFile = "..\\Data\\Definitions.xlsx"
-arts = "..\\Data\\GDPRChapterArticleSections.xlsx"
+colorDictFile = "../Data/ColorDictionary.xlsx"
+termListFile = "../Data/TermsList_Preliminary_v.1.xlsx"
+defFile = "../Data/Definitions.xlsx"
+arts = "../Data/GDPRChapterArticleSections.xlsx"
 
 
 #To remain unchanged
