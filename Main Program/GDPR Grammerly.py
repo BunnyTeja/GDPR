@@ -25,7 +25,7 @@ alphanumeric += alphanumeric.upper() + " \n"+"1234567890.,?!:;(){}[]"
 colorDictFile = "..\\Files to Have\\ColorDictionary.xlsx"
 termListFile = "..\\Files to Have\\TermsList_Preliminary_v.1.xlsx"
 defFile = "..\\Files to Have\\Definitions.xlsx"
-arts = "..\\Files to Have\\GDPR ChapterArticleSections.xlsx"
+arts = "..\\Files to Have\\GDPRChapterArticleSections.xlsx"
 
 
 #To remain unchanged
