@@ -1,0 +1,6 @@
+pandas
+sklearn
+nltk
+tkinter
+
+These should be the packages that need to be downloaded.
