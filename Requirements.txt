@@ -1,7 +1,5 @@
 pandas
 sklearn
 nltk
-tkinter
-sklearn
-
-These should be the packages that need to be downloaded.
+tk
+xlrd==1.2.0
