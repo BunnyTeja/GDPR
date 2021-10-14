@@ -67,8 +67,12 @@ def turnHeadingIntoNum(heading):
                      "V":5, "VI":6, "VII":7, "VIII":8,
                      "IX":9, "X":10, "XI":11, "XII":12,
                      "XIII":13, "XIV":14}
-    
-    chap = heading.split("CHAPTER ")[1].split()[0].rstrip()
+    try:
+        chap = (heading.split("CHAPTER ")[1]).split()[0].rstrip()
+    except:
+        chap = heading.split("CHAPTER ")[1]
+        print("There would have been an error")
+        print(chap)
     chap = RomanToArabic[chap]
     art = int(heading.split("Article ")[1].split()[0].rstrip())
     sec = int(heading.split("Section ")[1][0])
