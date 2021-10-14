@@ -68,7 +68,7 @@ def turnHeadingIntoNum(heading):
                      "IX":9, "X":10, "XI":11, "XII":12,
                      "XIII":13, "XIV":14}
     try:
-        chap = (heading.split("CHAPTER ")[1]).split()[0].rstrip()
+        chap = (heading.split("CHAPTER ")[1]).split()[0].rstrip() #Effort to fix
     except:
         chap = heading.split("CHAPTER ")[1]
         print("There would have been an error")
