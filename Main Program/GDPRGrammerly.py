@@ -83,10 +83,6 @@ def turnHeadingIntoNum(heading):
 def obtainLegalDoc():
     document = (pd.read_excel(arts).reset_index().
             rename(columns = {"index":"Heading"}))
-    try:
-        document = document.drop("Unnamed: 0", axis = 1)
-    except:
-        pass
     print(document.columns)
     print(document.head())
     document["Proper Heading"] = document["Heading"].apply(turnHeadingIntoNum)
