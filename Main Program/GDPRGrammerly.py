@@ -83,7 +83,8 @@ def turnHeadingIntoNum(heading):
 def obtainLegalDoc():
     document = (pd.read_excel(arts).reset_index().
             rename(columns = {"index":"Heading"}))
-    print(document.columns)
+    print("\n\nInformation about how the document is read...")
+    print("Columns:", document.columns)
     print(document.head())
     try:
         document["Proper Heading"] = document["Heading"].apply(turnHeadingIntoNum)
@@ -253,7 +254,11 @@ class GUI:
         inc = 0
         colorHeading = Label(self.gui, text = "Term Classification: ", font = ("Times", 10, "bold"))
         colorHeading.place(x=int(13*int(x_size)/50) - 120, y = int(y_size/30) + 320)
-        for i, j in enumerate(termColorDict):
+        print("\n\n\nIterating through the termColorDict...")
+        for i, j in enumerate(list(termColorDict.keys())):
+            print("i =", i, type(i))
+            print("j =", j, type(j))
+            print()
             colorLabel = Label(self.gui, text = j, font = ("Times", 10))
             colorLabel.place(x = int(13*int(x_size)/50)+inc, y = int(y_size/30) + 320)
             w.create_rectangle(10 + inc, 0, 20+inc, 10, fill=termColorDict[j], outline = termColorDict[j])
