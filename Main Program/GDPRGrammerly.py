@@ -85,7 +85,11 @@ def obtainLegalDoc():
             rename(columns = {"index":"Heading"}))
     print(document.columns)
     print(document.head())
-    document["Proper Heading"] = document["Heading"].apply(turnHeadingIntoNum)
+    try:
+        document["Proper Heading"] = document["Heading"].apply(turnHeadingIntoNum)
+    except:
+        document = document.drop("Heading", axis = 1).rename(columns = {"Unnamed: 0":"Heading"})
+        document["Proper Heading"] = document["Heading"].apply(turnHeadingIntoNum)
     return document
 
 
