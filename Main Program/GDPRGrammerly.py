@@ -262,7 +262,7 @@ class GUI:
             colorLabel = Label(self.gui, text = j, font = ("Times", 10))
             colorLabel.place(x = int(13*int(x_size)/50)+inc, y = int(y_size/30) + 320)
             w.create_rectangle(10 + inc, 0, 20+inc, 10, fill=termColorDict[j], outline = termColorDict[j])
-            inc += len(j)*8
+            inc += len(str(j))*8
         w.place(x = int(13*int(x_size)/50), y = int(y_size/30)+340)
 
         #Sets up the clear-all button (see clearScreens)
