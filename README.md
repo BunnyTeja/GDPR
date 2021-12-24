@@ -6,6 +6,11 @@ Necessary libraries to download include pandas, sklearn, nltk, and tkinter.
 
 Steps to Run the project
 
-Download the code and go to the project directory through cmd prompt.
-Install the following libraries pandas, sklearn, nltk, and openpyxl(pip install openpyxl)
-Go to the main program directory and Run the project(python GDPRGrammerly.py)
+- Download the code and go to the project directory through cmd prompt.
+- Run "pip install -r Requirments.txt"
+
+  It will install the following libraries pandas, sklearn, nltk, and openpyxl
+  Alternatively, you can install them manually with: pip install <library>
+
+- Go to the main program directory and run the project with
+  "python GDPRGrammerly.py

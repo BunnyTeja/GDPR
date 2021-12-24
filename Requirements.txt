@@ -3,3 +3,4 @@ sklearn
 nltk
 tk
 xlrd==1.2.0
+openpyxl
